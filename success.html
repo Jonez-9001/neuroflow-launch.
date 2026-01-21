@@ -3,24 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroFlow | Download Access</title>
+    <title>Access Granted | NeuroFlow</title>
     <style>
-        body { margin: 0; background: #000; color: #fff; font-family: 'Courier New', monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; }
-        h1 { color: #00f3ff; text-transform: uppercase; letter-spacing: 2px; }
-        .box { border: 1px solid #333; padding: 40px; border-radius: 10px; max-width: 500px; }
-        .btn { display: inline-block; margin-top: 20px; padding: 15px 40px; background: #00f3ff; color: #000; text-decoration: none; font-weight: bold; font-size: 1.2rem; }
-        .btn:hover { background: #fff; }
+        /* MATCHING THE PREMIUM CYAN THEME */
+        :root { 
+            --neon: #00eaff; 
+            --bg: #050505; 
+            --text: #f0f0f0; 
+            --card-bg: #111;
+        }
+        
+        body { 
+            margin: 0; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* HEADER ANIMATION */
+        h1 { 
+            color: var(--neon); 
+            text-transform: uppercase; 
+            letter-spacing: 3px; 
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 234, 255, 0.6); 
+            animation: glow 2s infinite alternate;
+        }
+
+        p { color: #aaa; max-width: 500px; margin-bottom: 40px; line-height: 1.5; }
+
+        /* DOWNLOAD CARDS */
+        .download-container {
+            width: 100%;
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .download-card {
+            background: #111;
+            padding: 25px;
+            border: 1px solid #333;
+            border-radius: 16px;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .download-card:hover { border-color: var(--neon); transform: translateY(-3px); }
+
+        .card-title { color: #fff; font-weight: bold; font-size: 1.1rem; display: block; margin-bottom: 5px; }
+        .card-sub { color: #666; font-size: 0.85rem; display: block; margin-bottom: 20px; }
+
+        /* BUTTONS */
+        .btn {
+            display: block;
+            background: var(--neon);
+            color: #000;
+            padding: 14px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 800;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px rgba(0, 234, 255, 0.2);
+            transition: all 0.2s;
+        }
+        .btn:hover { background: #fff; box-shadow: 0 0 25px rgba(0, 234, 255, 0.6); }
+
+        /* PDF BUTTON STYLE */
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #333;
+            color: #fff;
+            box-shadow: none;
+        }
+        .btn-secondary:hover { border-color: var(--neon); color: var(--neon); background: transparent; }
+
+        .warning { font-size: 0.75rem; color: #444; margin-top: 40px; border-top: 1px solid #222; padding-top: 20px; width: 100%; max-width: 400px; }
+
+        @keyframes glow { from { text-shadow: 0 0 10px rgba(0, 234, 255, 0.2); } to { text-shadow: 0 0 25px rgba(0, 234, 255, 0.8); } }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>PAYMENT CONFIRMED</h1>
-        <p>Your license key has been verified.</p>
-        <p>Access your 40Hz Gamma Audio below:</p>
-        <br>
-        <a href="https://drive.google.com/file/d/1dwfgtHSToyHimyNrgnxogxDTSU3xV1ac/view?usp=sharing" class="btn">DOWNLOAD NEUROFLOW</a>
-        <br><br>
-        <p style="color: #555; font-size: 0.8rem;">(Save this file locally. This link expires.)</p>
+
+    <div style="font-size: 3rem; margin-bottom: 10px;">✅</div>
+    <h1>Access Granted</h1>
+    <p>Welcome to the Protocol. Your files have been decrypted and are ready below.</p>
+
+    <div class="download-container">
+        
+        <div class="download-card">
+            <span class="card-title">🎧 The 40Hz Audio Protocol</span>
+            <span class="card-sub">Format: MP3 | Size: 60MB</span>
+            
+            <a href="PASTE_YOUR_AUDIO_LINK_HERE" class="btn" download>
+                Download Audio
+            </a>
+        </div>
+
+        <div class="download-card">
+            <span class="card-title">📄 Exam Day Routine</span>
+            <span class="card-sub">Format: PDF | Bonus Content</span>
+            
+            <a href="https://https://wonderful-wave-050130f10.1.azurestaticapps.net/success.html" class="btn btn-secondary" download>
+                Download PDF Guide
+            </a>
+        </div>
+
     </div>
+
+    <p class="warning">⚠️ SECURITY WARNING: This is a one-time secure link. Do not share this URL with anyone, or your access IP will be banned.</p>
+
+    <a href="https://wa.me/919080540047?text=My+download+is+not+working" style="margin-top: 20px; color: #666; text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 8px;">
+        <svg width="16" height="16" fill="#25D366" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.698c.969.537 1.941.82 2.791.82 3.18 0 5.768-2.586 5.768-5.766 0-3.18-2.587-5.767-5.768-5.767zm12 11.535l1.455-5.315c-.975-1.571-2.457-2.618-3.953-2.618-3.708 0-6.723 3.015-6.723 6.723 0 1.259.349 2.434.966 3.435l-1.028 3.754 3.863-1.013c.969.57 2.083.899 3.121.899 3.707-.001 6.722-3.015 6.722-6.723z"/></svg>
+        Download Failed? Contact Support
+    </a>
+
 </body>
 </html>
